@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Personal Slider</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="../../Scrolling_Skills_HTML_CSS/style/style.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/62e8dc6f5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../style/scripts.js"></script>
+    <!-- <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+  </head>
+  <nav data-toggled="false" data-transitionable="false">
+    <div id="nav-logo-section" class="nav-section">
+      <a href="#">
+        <i class="fa-solid fa-chart-simple"></i>
+      </a>
+    </div>
+    <div id="nav-mobile-section">
+      <div id="nav-link-section" class="nav-section">
+        <a href="#">ABOUT</a>
+        <a href="#">WORK</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.github.com/McCReuben" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#">
+          <!-- <i class="fa-solid fa-file-invoice"></i> -->
+          <i class="fa-solid fa-id-card"></i>
+        </a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="#">GET IN TOUCH</a>
+      </div>
+    </div>
+    <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+      <span>Menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <main>
+    <article data-index="0" data-status="active">
+      <div class="article-image-section article-section"></div>
+      <!-- <p class="overlay">Reuben</p> -->
+      <!-- <div class="article-description-section article-section"> -->
+      <div class="skill-scroll-section article-section">
+        <iframe
+          class="skill-scroll"
+          scrolling="no"
+          src="../../Scrolling_Skills_HTML_CSS/static/index.html"
+        ></iframe>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>Reuben's Data Science Portfolio</h2>
+        <!-- <i class="fa-solid fa-plus"></i> -->
+        <img
+          src="https://uploads-ssl.webflow.com/60c0a5bb9df18e0c7bea5c2c/60c4acf1be141ddaf108cf16_plus-shape.svg"
+        />
+      </div>
+      <div class="article-nav-section article-section">
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleLeftClick()"
+        >
+          <!-- <i class="fa-solid fa-arrow-left-long"></i> -->
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleRightClick()"
+        >
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="1" data-status="inactive">
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>
+          A place where books hang out waiting to be grabbed. But don't be too
+          grabby now, ya hear.
+        </p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>COVID-19 Vaccine Data Report</h2>
+        <a
+          href="https://public.tableau.com/views/COVID-19GlobalVaccineTracker_16802330534130/COVID-19GlobalVaccineTracker?:language=en-US&:display_count=n&:origin=viz_share_link"
+        >
+          <i class="fa-solid fa-square-up-right"></i>
+        </a>
+      </div>
+      <div class="article-nav-section article-section">
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleLeftClick()"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleRightClick()"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+          <!-- <i class="fa-light fa-chevron-right"></i> -->
+        </button>
+      </div>
+    </article>
+    <article data-index="2" data-status="inactive">
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>
+          The neatest lighthouse you ever saw. Ehh, actually it's kind of messy.
+          But that's why the pic is of the outside.
+        </p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>ML Pipeline Webapp</h2>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleLeftClick()"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleRightClick()"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="3" data-status="inactive">
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>
+          My take on the classic Kaggle house price regression competition. I
+          used this project as an opportunity to learn more about every ML
+          algorithm and tool I could find.
+        </p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>House Price Regression Model</h2>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleLeftClick()"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleRightClick()"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="4" data-status="inactive">
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>FFT</p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>Fourier Transform: Removing Background Noise</h2>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleLeftClick()"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="article-nav-button"
+          type="button"
+          onclick="handleRightClick()"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </article>
+  </main>
+</html>
