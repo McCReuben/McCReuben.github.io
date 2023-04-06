@@ -197,24 +197,28 @@ main > article:first-child > .overlay {
 }
 
 main > article:nth-child(2) > .article-image-section {
-  /* background-image: url("https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"); */
   /* background-image: url("../raw/Tableau_COVID2.png"); */
   background-image: url("../raw/COVID.webp");
 }
 
 main > article:nth-child(3) > .article-image-section {
-  /* background-image: url("https://images.unsplash.com/photo-1660580554695-d2ca5008f1f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"); */
-  background-image: url("../raw/pipeline2.webp");
+  background-image: url("../raw/FT2.png");
 }
 
 main > article:nth-child(4) > .article-image-section {
-  /* background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80"); */
   background-image: url("../raw/houses.jpg");
 }
 
 main > article:nth-child(5) > .article-image-section {
-  /* background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80"); */
-  background-image: url("../raw/FT2.png");
+  background-image: url("../raw/pipeline2.webp");
+}
+
+main > article:nth-child(6) > .article-image-section {
+  background-image: url("../raw/RPG.webp");
+}
+
+main > article:nth-child(7) > .article-image-section {
+  background-image: url("../raw/health.jpg");
 }
 
 main > article > .article-image-section {
